@@ -8,7 +8,6 @@ A **Modbus TCP client** in C, built in **two layers**:
 Includes example programs: **`clienteMB`** (write+read) and **`clienteA`** (simple demo).
 
 ---
----
 
 ## ✨ Features
 - `0x03` **Read Holding Registers** (up to **125** 16-bit registers, big-endian)  
@@ -21,15 +20,19 @@ Includes example programs: **`clienteMB`** (write+read) and **`clienteA`** (simp
 **Linux / macOS / WSL / Cygwin**
 
 clientMB
+
 gcc modbusTCP.c modbusAP.c clienteMB.c -o clienteMB
 ---
 clientA
+
 gcc modbusTCP.c modbusAP.c clienteA.c -o clienteA
 ---
 clientteste
+
 gcc modbusTCP.c modbusAP.c clienteA.c -o clienteA
 
 ## ▶️ Run
 ./clienteMB    
 ./clienteA     
+
 
