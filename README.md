@@ -37,8 +37,8 @@ Includes example programs: **`clienteMB`** (write+read) and **`clienteA`** (simp
 - **Data model:** create a block of **Holding Registers** that covers the addresses you’ll use (e.g., 1..200)
   
 **Run your client:**
--./clienteA   # writes one register (check value in Modbus Slave UI)
--./clienteMB  # writes N registers then reads them back (table should update)
+- ./clienteA   # writes one register (check value in Modbus Slave UI)
+- ./clienteMB  # writes N registers then reads them back (table should update)
 
 ## 🧩 API
 **0x03 — Read n registers**
@@ -52,6 +52,7 @@ int Read_h_regs(const char* ip, int port, uint16_t start, uint16_t n, uint16_t* 
 // Returns: n (success), -E (Modbus exception), -1 (non-Modbus error).
 
 int Write_multiple_regs(const char* ip, int port, uint16_t start, uint16_t n, const uint16_t* vals);
+
 
 
 
