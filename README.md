@@ -36,7 +36,7 @@ Includes example programs: **`clienteMB`** (write+read) and **`clienteA`** (simp
 - **Host/IP:** `127.0.0.1` (same PC) **or** the server machine’s IP (e.g., `192.168.1.45`)
 - **Data model:** create a block of **Holding Registers** that covers the addresses you’ll use (e.g., 1..200)
   
-  **Run your client:**
+**Run your client:**
 -./clienteA   # writes one register (check value in Modbus Slave UI)
 -./clienteMB  # writes N registers then reads them back (table should update)
 
@@ -52,6 +52,7 @@ int Read_h_regs(const char* ip, int port, uint16_t start, uint16_t n, uint16_t* 
 // Returns: n (success), -E (Modbus exception), -1 (non-Modbus error).
 
 int Write_multiple_regs(const char* ip, int port, uint16_t start, uint16_t n, const uint16_t* vals);
+
 
 
 
