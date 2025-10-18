@@ -20,12 +20,16 @@ Includes example programs: **`clienteMB`** (write+read) and **`clienteA`** (simp
 
 **Linux / macOS / WSL / Cygwin**
 
-# clienteMB
+clientMB
 gcc modbusTCP.c modbusAP.c clienteMB.c -o clienteMB
-
-# clienteA
+---
+clientA
+gcc modbusTCP.c modbusAP.c clienteA.c -o clienteA
+---
+clientteste
 gcc modbusTCP.c modbusAP.c clienteA.c -o clienteA
 
 ## ▶️ Run
 ./clienteMB    
 ./clienteA     
+
