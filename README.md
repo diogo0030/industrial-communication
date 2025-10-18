@@ -22,10 +22,12 @@ Includes example programs: **`clienteMB`** (write+read) and **`clienteA`** (simp
 clientMB
 
 gcc modbusTCP.c modbusAP.c clienteMB.c -o clienteMB
+
 ---
 clientA
 
 gcc modbusTCP.c modbusAP.c clienteA.c -o clienteA
+
 ---
 clientteste
 
@@ -34,5 +36,6 @@ gcc modbusTCP.c modbusAP.c clienteA.c -o clienteA
 ## ▶️ Run
 ./clienteMB    
 ./clienteA     
+
 
 
