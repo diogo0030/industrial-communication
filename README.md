@@ -27,7 +27,21 @@ Includes example programs: **`clienteMB`** (write+read) and **`clienteA`** (simp
 
 ## ▶️ Run
 ./clienteMB    
-./clienteA     
+./clienteA 
+
+##🧪 Using with Modbus Slave (server simulator)
+
+
+## 🧩 API
+// 0x03 — Read n registers.
+// Returns: n (success), -E (Modbus exception; E = exception code), -1 (non-Modbus error).
+int Read_h_regs(const char* ip, int port, uint16_t start, uint16_t n, uint16_t* out);
+
+// 0x10 — Write n registers.
+// Returns: n (success), -E (Modbus exception), -1 (non-Modbus error).
+int Write_multiple_regs(const char* ip, int port, uint16_t start, uint16_t n, const uint16_t* vals);
+
+
 
 
 
